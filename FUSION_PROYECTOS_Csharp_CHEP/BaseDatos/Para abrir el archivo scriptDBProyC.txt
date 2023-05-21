@@ -1,7 +1,0 @@
-Para abrir el archivo scriptDBProyCharp.sql hacer:
-* en el SSMS ir a File/Open/File...
-* escoger el archivo .sql. y clic en Open
-* esperar o seguir los pasos.
-(No lo he probado, pero el Jerson me dijo que era un
- archivo .sql)(Si tienes problemas con el archivo o la BD me lo 
-haces saber)(El tipo fuentes esta en unicod)
