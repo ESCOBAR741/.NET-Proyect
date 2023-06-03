@@ -1,0 +1,1 @@
+Scaffold-DbContext "server=nombre_server;database=DBSeguimientoGastos;integrated security=true;Encript=false" Microsoft.EntityFramework.SqlServer -OutPutDir Models
