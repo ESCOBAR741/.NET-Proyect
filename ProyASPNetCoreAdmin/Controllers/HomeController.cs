@@ -6,12 +6,27 @@ namespace ProyASPNetCoreAdmin.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly DbseguimientoGastosContext _dbContext;
+
+        public HomeController(DbseguimientoGastosContext Context)
+        {
+            _dbContext = Context;
+        }
+
+        [HttpPost]
+        public IActionResult GetResult() {
+            var data = _dbContext.Usuarios.ToList();
+            return Json(data);
+
+        }
+
+     /*private readonly ILogger<HomeController> _logger;
 
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
         }
+      */
 
         public IActionResult Index()
         {
