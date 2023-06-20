@@ -1,0 +1,49 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#enviar").click(function() {
+                $.ajax({
+                    url: "/Home/GetResult",
+                    type: "post",
+                    datatype: "json",
+                    success:function(data) {
+                    var resultado = "";
+                    for(var i=0; i<data.length; i++) {
+                    resultado += "nombre" + data[i].nombres;
+                    //$("#resultado").text(data.mensaje)
+                    }
+                    $("#resultado").html(resultado);
+                },
+                error:function(){
+                    $("#resultado").text("error");
+                }
+            });
+        })
+    })
+    </script>
+</head>
+<body>
+
+    <button class="btn btn-primary" id="enviar">Enviar</button>
+    <div id="resultado">
+
+    </div>
+
+    <div class="text-center">
+        <h1 class="display-4">Welcome</h1>
+        <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    </div>
+
+</body>
+</html>
