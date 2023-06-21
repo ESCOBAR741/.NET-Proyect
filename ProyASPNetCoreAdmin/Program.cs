@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 using ProyASPNetCoreAdmin.Models;
 
@@ -8,6 +9,11 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<DbseguimientoGastosContext>(options =>
         options.UseSqlServer(builder.Configuration.GetConnectionString("conexion")));
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(
+    option => {
+    option.LoginPath = "/Cuenta/Index";
+    }
+);
 
 var app = builder.Build();
 
