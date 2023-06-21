@@ -11,7 +11,7 @@ builder.Services.AddDbContext<DbseguimientoGastosContext>(options =>
         options.UseSqlServer(builder.Configuration.GetConnectionString("conexion")));
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(
     option => {
-    option.LoginPath = "/Cuenta/Index";
+        option.LoginPath = "/Cuenta/Index";
     }
 );
 
@@ -34,6 +34,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Cuenta}/{action=Index}/{id?}");
+    pattern: "{controller=Cuenta}/{action=Index}"); // /{ id ?}
 
 app.Run();

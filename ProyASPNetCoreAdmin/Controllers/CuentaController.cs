@@ -16,7 +16,6 @@ namespace ProyASPNetCoreAdmin.Controllers
             _context = context;
         }
 
-
         // GET: CuentaController1
         public ActionResult Index()
         {
@@ -24,19 +23,19 @@ namespace ProyASPNetCoreAdmin.Controllers
         }
 
         [HttpPost]
-        public IActionResult Login(Usuario model)
+        public IActionResult Login(Administradore model)
         {
             if (ModelState.IsValid)
             {
-                var user = _context.Usuarios.FirstOrDefault(u => u.Usuario1 == model.Usuario1 && u.Contraseña == model.Contraseña);
+                var user = _context.Administradores.FirstOrDefault(a => a.NombreAdmin == model.NombreAdmin && a.ContraseñaAdmin == model.ContraseñaAdmin);
                 if (user != null)
                 {
                     var claims = new List<Claim>
                     {
-                        new Claim (ClaimTypes.Name,user.Usuario1)
+                        new Claim (ClaimTypes.Name,user.NombreAdmin)
                     };
 
-                    var identity = new ClaimsIdentity(claims, "Login");
+                    var identity = new ClaimsIdentity(claims, "login");
                     var principal = new ClaimsPrincipal(identity);
 
                     HttpContext.SignInAsync(principal).Wait();
