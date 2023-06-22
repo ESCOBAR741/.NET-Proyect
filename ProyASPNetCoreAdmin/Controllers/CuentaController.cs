@@ -25,6 +25,7 @@ namespace ProyASPNetCoreAdmin.Controllers
         [HttpPost]
         public IActionResult Login(Administradore model)
         {
+
             if (ModelState.IsValid)
             {
                 var user = _context.Administradores.FirstOrDefault(a => a.NombreAdmin == model.NombreAdmin && a.ContraseñaAdmin == model.ContraseñaAdmin);
@@ -40,7 +41,7 @@ namespace ProyASPNetCoreAdmin.Controllers
 
                     HttpContext.SignInAsync(principal).Wait();
 
-                    return RedirectToAction("Index", "Home"); ;
+                    return RedirectToAction("Index", "Home"); 
                 }
                 else
                 {

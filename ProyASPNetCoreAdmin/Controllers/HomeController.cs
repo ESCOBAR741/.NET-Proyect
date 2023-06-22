@@ -8,7 +8,7 @@ namespace ProyASPNetCoreAdmin.Controllers
     {
         private readonly DbseguimientoGastosContext _dbContext;
 
-        public HomeController(DbseguimientoGastosContext Context)
+        /*public HomeController(DbseguimientoGastosContext Context)
         {
             _dbContext = Context;
         }
@@ -19,14 +19,15 @@ namespace ProyASPNetCoreAdmin.Controllers
             return Json(data);
 
         }
+        */
 
-     /*private readonly ILogger<HomeController> _logger;
+        private readonly ILogger<HomeController> _logger;
 
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
         }
-      */
+     
 
         public IActionResult Index()
         {
