@@ -11,11 +11,10 @@ namespace ProyASPNetCoreAdmin.Controllers
         private readonly DbseguimientoGastosContext _context;
         string mensaje;
 
-         public CuentaController(DbseguimientoGastosContext context)
-         {
-             _context = context;
-         }
-        
+        public CuentaController(DbseguimientoGastosContext context)
+        {
+            _context = context;
+        }
 
         // GET: CuentaController1
         public ActionResult Index()
@@ -24,23 +23,25 @@ namespace ProyASPNetCoreAdmin.Controllers
         }
 
         [HttpPost]
-        public IActionResult Login(Usuario model)
+        public IActionResult Login(Administradore model)
         {
-            if(ModelState.IsValid)
+
+            if (ModelState.IsValid)
             {
-                var user = _context.Usuarios.FirstOrDefault(u=>u.Usuario1 == model.Usuario1 && u.Contraseña == model.Contraseña);
-                if(user != null)
+                var user = _context.Administradores.FirstOrDefault(a => a.NombreAdmin == model.NombreAdmin && a.ContraseñaAdmin == model.ContraseñaAdmin);
+                if (user != null)
                 {
                     var claims = new List<Claim>
                     {
-                        new Claim (ClaimTypes.Name,user.Usuario1)
+                        new Claim (ClaimTypes.Name,user.NombreAdmin)
                     };
 
-                    var identity = new ClaimsIdentity(claims, "Login");
+                    var identity = new ClaimsIdentity(claims, "login");
                     var principal = new ClaimsPrincipal(identity);
+
                     HttpContext.SignInAsync(principal).Wait();
 
-                    return RedirectToAction("Index", "Home"); ;
+                    return RedirectToAction("Index", "Home"); 
                 }
                 else
                 {
@@ -52,73 +53,18 @@ namespace ProyASPNetCoreAdmin.Controllers
             return View(model);
         }
 
-        // GET: CuentaController1/Details/5
-        public ActionResult Details(int id)
-        {
-            return View();
-        }
-
-        // GET: CuentaController1/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: CuentaController1/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public async Task<IActionResult> Logout()
         {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
+            await HttpContext.SignOutAsync();
+            _context.Dispose();
+            /* Remover usuario en caso de ser necesario
+            HttpContext.Session.Remove("Usuario");
+            HttpContext.Session.Clear();
+            */
 
-        // GET: CuentaController1/Edit/5
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
-
-        // POST: CuentaController1/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: CuentaController1/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
-
-        // POST: CuentaController1/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+            return RedirectToAction("Index", "Cuenta");
         }
     }
 }
