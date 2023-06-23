@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DBSeguimientoGastos" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=NOTE_DERRMAN\SQLEXPRESS;Initial Catalog=DBSeguimientoGastos;Integrated Security=True" SettingsObjectName="SeguimientoGasto.Properties.Settings" SettingsPropertyName="DBSeguimientoGastosConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Departamentos" Member="Departamentos">
+    <Type Name="Departamentos">
+      <Column Name="idDepto" Type="System.Byte" DbType="TinyInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="nombreDepto" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Association Name="Departamentos_Usuarios" Member="Usuarios" ThisKey="idDepto" OtherKey="idDepto" Type="Usuarios" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Gastos" Member="Gastos">
+    <Type Name="Gastos">
+      <Column Name="idGasto" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="tipoGasto" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="detalle" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="descripcion" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="monto" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="fechaGasto" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="idUsuario" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Usuarios_Gastos" Member="Usuarios" ThisKey="idUsuario" OtherKey="idUsuario" Type="Usuarios" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Usuarios" Member="Usuarios">
+    <Type Name="Usuarios">
+      <Column Name="idUsuario" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="nombres" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="apellidos" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="run" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="usuario" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="contraseña" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="idDepto" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Association Name="Usuarios_Gastos" Member="Gastos" ThisKey="idUsuario" OtherKey="idUsuario" Type="Gastos" />
+      <Association Name="Departamentos_Usuarios" Member="Departamentos" ThisKey="idDepto" OtherKey="idDepto" Type="Departamentos" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>
