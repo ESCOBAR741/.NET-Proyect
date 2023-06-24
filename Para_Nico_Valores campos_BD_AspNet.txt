@@ -1,0 +1,34 @@
+Estos son los posibles valores de algunos campos
+
+* Tabla Gastos
+	tipoGasto:
+		traslado
+		alimentacion
+		articulos
+		otros
+	detalle:
+		Para traslado:
+			ida trabajo
+			regreso trabajo
+			otros
+		Para alimentacion:
+			desayuno
+			almuerzo
+			once
+			otros
+		Para articulos:
+			oficina
+			aseo
+			mantencion
+			computacion
+			otros
+	OBS: Estos son los valores que puedes usar, no ingreses otros valores. Si en "tipoGasto" ingresaste "otros" en "detalle" debes colocar "otros". Si en "detalle" pusiste "otros" debes especificar en "descripcion" en lo que se gastó. Para todos los tipoGasto debes especificar en la "Descripcion" en que se gasto dinero. Por ejemplo, si se compro un articulo de computacion como una impresora, en "descripcion" colocar tipo de impresora, marca y modelo, etc.
+* Tabla Departamentos
+	nombreDepto:
+		id 1 - finanzas
+		id 2 - informatica
+		id 3 - mantencion
+		id 4 - rrhh
+	OBS: Usa los numeros de id. En esta tabla no ingreses valores.
+	
+		
