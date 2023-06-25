@@ -9,165 +9,165 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ProyASPNetCore7Admin
 build_property.RootNamespace = ProyASPNetCore7Admin
-build_property.ProjectDir = C:\Users\denil\OneDrive\Escritorio\ProyASPNetCore7Admin\
+build_property.ProjectDir = C:\Users\denil\OneDrive\Documentos\GitHub\.NET-Proyect\ProyASPNetCore7Admin\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\denil\OneDrive\Escritorio\ProyASPNetCore7Admin
+build_property.MSBuildProjectDirectory = C:\Users\denil\OneDrive\Documentos\GitHub\.NET-Proyect\ProyASPNetCore7Admin
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/denil/OneDrive/Escritorio/ProyASPNetCore7Admin/Views/Account/Login.cshtml]
+[C:/Users/denil/OneDrive/Documentos/GitHub/.NET-Proyect/ProyASPNetCore7Admin/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/denil/OneDrive/Escritorio/ProyASPNetCore7Admin/Views/AdminMantenedores/Create.cshtml]
+[C:/Users/denil/OneDrive/Documentos/GitHub/.NET-Proyect/ProyASPNetCore7Admin/Views/AdminMantenedores/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5NYW50ZW5lZG9yZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/denil/OneDrive/Escritorio/ProyASPNetCore7Admin/Views/AdminMantenedores/Delete.cshtml]
+[C:/Users/denil/OneDrive/Documentos/GitHub/.NET-Proyect/ProyASPNetCore7Admin/Views/AdminMantenedores/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5NYW50ZW5lZG9yZXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/denil/OneDrive/Escritorio/ProyASPNetCore7Admin/Views/AdminMantenedores/Details.cshtml]
+[C:/Users/denil/OneDrive/Documentos/GitHub/.NET-Proyect/ProyASPNetCore7Admin/Views/AdminMantenedores/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5NYW50ZW5lZG9yZXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/denil/OneDrive/Escritorio/ProyASPNetCore7Admin/Views/AdminMantenedores/Edit.cshtml]
+[C:/Users/denil/OneDrive/Documentos/GitHub/.NET-Proyect/ProyASPNetCore7Admin/Views/AdminMantenedores/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5NYW50ZW5lZG9yZXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/denil/OneDrive/Escritorio/ProyASPNetCore7Admin/Views/AdminMantenedores/Index.cshtml]
+[C:/Users/denil/OneDrive/Documentos/GitHub/.NET-Proyect/ProyASPNetCore7Admin/Views/AdminMantenedores/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5NYW50ZW5lZG9yZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/denil/OneDrive/Escritorio/ProyASPNetCore7Admin/Views/Departamentos/Create.cshtml]
+[C:/Users/denil/OneDrive/Documentos/GitHub/.NET-Proyect/ProyASPNetCore7Admin/Views/Departamentos/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0YW1lbnRvc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/denil/OneDrive/Escritorio/ProyASPNetCore7Admin/Views/Departamentos/Delete.cshtml]
+[C:/Users/denil/OneDrive/Documentos/GitHub/.NET-Proyect/ProyASPNetCore7Admin/Views/Departamentos/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0YW1lbnRvc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/denil/OneDrive/Escritorio/ProyASPNetCore7Admin/Views/Departamentos/Details.cshtml]
+[C:/Users/denil/OneDrive/Documentos/GitHub/.NET-Proyect/ProyASPNetCore7Admin/Views/Departamentos/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0YW1lbnRvc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/denil/OneDrive/Escritorio/ProyASPNetCore7Admin/Views/Departamentos/Edit.cshtml]
+[C:/Users/denil/OneDrive/Documentos/GitHub/.NET-Proyect/ProyASPNetCore7Admin/Views/Departamentos/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0YW1lbnRvc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/denil/OneDrive/Escritorio/ProyASPNetCore7Admin/Views/Departamentos/Index.cshtml]
+[C:/Users/denil/OneDrive/Documentos/GitHub/.NET-Proyect/ProyASPNetCore7Admin/Views/Departamentos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0YW1lbnRvc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/denil/OneDrive/Escritorio/ProyASPNetCore7Admin/Views/Gastoes/Create.cshtml]
+[C:/Users/denil/OneDrive/Documentos/GitHub/.NET-Proyect/ProyASPNetCore7Admin/Views/Gastoes/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FzdG9lc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/denil/OneDrive/Escritorio/ProyASPNetCore7Admin/Views/Gastoes/Delete.cshtml]
+[C:/Users/denil/OneDrive/Documentos/GitHub/.NET-Proyect/ProyASPNetCore7Admin/Views/Gastoes/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FzdG9lc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/denil/OneDrive/Escritorio/ProyASPNetCore7Admin/Views/Gastoes/Details.cshtml]
+[C:/Users/denil/OneDrive/Documentos/GitHub/.NET-Proyect/ProyASPNetCore7Admin/Views/Gastoes/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FzdG9lc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/denil/OneDrive/Escritorio/ProyASPNetCore7Admin/Views/Gastoes/Edit.cshtml]
+[C:/Users/denil/OneDrive/Documentos/GitHub/.NET-Proyect/ProyASPNetCore7Admin/Views/Gastoes/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FzdG9lc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/denil/OneDrive/Escritorio/ProyASPNetCore7Admin/Views/Gastoes/Index.cshtml]
+[C:/Users/denil/OneDrive/Documentos/GitHub/.NET-Proyect/ProyASPNetCore7Admin/Views/Gastoes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FzdG9lc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/denil/OneDrive/Escritorio/ProyASPNetCore7Admin/Views/Gastos/Create.cshtml]
+[C:/Users/denil/OneDrive/Documentos/GitHub/.NET-Proyect/ProyASPNetCore7Admin/Views/Gastos/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FzdG9zXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/denil/OneDrive/Escritorio/ProyASPNetCore7Admin/Views/Gastos/Delete.cshtml]
+[C:/Users/denil/OneDrive/Documentos/GitHub/.NET-Proyect/ProyASPNetCore7Admin/Views/Gastos/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FzdG9zXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/denil/OneDrive/Escritorio/ProyASPNetCore7Admin/Views/Gastos/Details.cshtml]
+[C:/Users/denil/OneDrive/Documentos/GitHub/.NET-Proyect/ProyASPNetCore7Admin/Views/Gastos/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FzdG9zXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/denil/OneDrive/Escritorio/ProyASPNetCore7Admin/Views/Gastos/Edit.cshtml]
+[C:/Users/denil/OneDrive/Documentos/GitHub/.NET-Proyect/ProyASPNetCore7Admin/Views/Gastos/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FzdG9zXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/denil/OneDrive/Escritorio/ProyASPNetCore7Admin/Views/Gastos/Index.cshtml]
+[C:/Users/denil/OneDrive/Documentos/GitHub/.NET-Proyect/ProyASPNetCore7Admin/Views/Gastos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FzdG9zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/denil/OneDrive/Escritorio/ProyASPNetCore7Admin/Views/Home/Index.cshtml]
+[C:/Users/denil/OneDrive/Documentos/GitHub/.NET-Proyect/ProyASPNetCore7Admin/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/denil/OneDrive/Escritorio/ProyASPNetCore7Admin/Views/Home/Privacy.cshtml]
+[C:/Users/denil/OneDrive/Documentos/GitHub/.NET-Proyect/ProyASPNetCore7Admin/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/denil/OneDrive/Escritorio/ProyASPNetCore7Admin/Views/Presupuestos/Create.cshtml]
+[C:/Users/denil/OneDrive/Documentos/GitHub/.NET-Proyect/ProyASPNetCore7Admin/Views/Presupuestos/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlc3VwdWVzdG9zXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/denil/OneDrive/Escritorio/ProyASPNetCore7Admin/Views/Presupuestos/Delete.cshtml]
+[C:/Users/denil/OneDrive/Documentos/GitHub/.NET-Proyect/ProyASPNetCore7Admin/Views/Presupuestos/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlc3VwdWVzdG9zXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/denil/OneDrive/Escritorio/ProyASPNetCore7Admin/Views/Presupuestos/Details.cshtml]
+[C:/Users/denil/OneDrive/Documentos/GitHub/.NET-Proyect/ProyASPNetCore7Admin/Views/Presupuestos/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlc3VwdWVzdG9zXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/denil/OneDrive/Escritorio/ProyASPNetCore7Admin/Views/Presupuestos/Edit.cshtml]
+[C:/Users/denil/OneDrive/Documentos/GitHub/.NET-Proyect/ProyASPNetCore7Admin/Views/Presupuestos/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlc3VwdWVzdG9zXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/denil/OneDrive/Escritorio/ProyASPNetCore7Admin/Views/Presupuestos/Index.cshtml]
+[C:/Users/denil/OneDrive/Documentos/GitHub/.NET-Proyect/ProyASPNetCore7Admin/Views/Presupuestos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlc3VwdWVzdG9zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/denil/OneDrive/Escritorio/ProyASPNetCore7Admin/Views/Shared/Error.cshtml]
+[C:/Users/denil/OneDrive/Documentos/GitHub/.NET-Proyect/ProyASPNetCore7Admin/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/denil/OneDrive/Escritorio/ProyASPNetCore7Admin/Views/Shared/_LayoutLogin.cshtml]
+[C:/Users/denil/OneDrive/Documentos/GitHub/.NET-Proyect/ProyASPNetCore7Admin/Views/Shared/_LayoutLogin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/denil/OneDrive/Escritorio/ProyASPNetCore7Admin/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/denil/OneDrive/Documentos/GitHub/.NET-Proyect/ProyASPNetCore7Admin/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/denil/OneDrive/Escritorio/ProyASPNetCore7Admin/Views/Usuarios/Create.cshtml]
+[C:/Users/denil/OneDrive/Documentos/GitHub/.NET-Proyect/ProyASPNetCore7Admin/Views/Usuarios/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/denil/OneDrive/Escritorio/ProyASPNetCore7Admin/Views/Usuarios/Delete.cshtml]
+[C:/Users/denil/OneDrive/Documentos/GitHub/.NET-Proyect/ProyASPNetCore7Admin/Views/Usuarios/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/denil/OneDrive/Escritorio/ProyASPNetCore7Admin/Views/Usuarios/Details.cshtml]
+[C:/Users/denil/OneDrive/Documentos/GitHub/.NET-Proyect/ProyASPNetCore7Admin/Views/Usuarios/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/denil/OneDrive/Escritorio/ProyASPNetCore7Admin/Views/Usuarios/Edit.cshtml]
+[C:/Users/denil/OneDrive/Documentos/GitHub/.NET-Proyect/ProyASPNetCore7Admin/Views/Usuarios/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/denil/OneDrive/Escritorio/ProyASPNetCore7Admin/Views/Usuarios/Index.cshtml]
+[C:/Users/denil/OneDrive/Documentos/GitHub/.NET-Proyect/ProyASPNetCore7Admin/Views/Usuarios/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/denil/OneDrive/Escritorio/ProyASPNetCore7Admin/Views/_ViewImports.cshtml]
+[C:/Users/denil/OneDrive/Documentos/GitHub/.NET-Proyect/ProyASPNetCore7Admin/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/denil/OneDrive/Escritorio/ProyASPNetCore7Admin/Views/_ViewStart.cshtml]
+[C:/Users/denil/OneDrive/Documentos/GitHub/.NET-Proyect/ProyASPNetCore7Admin/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/denil/OneDrive/Escritorio/ProyASPNetCore7Admin/Views/Shared/_Layout.cshtml]
+[C:/Users/denil/OneDrive/Documentos/GitHub/.NET-Proyect/ProyASPNetCore7Admin/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-ug1o9rre2g
