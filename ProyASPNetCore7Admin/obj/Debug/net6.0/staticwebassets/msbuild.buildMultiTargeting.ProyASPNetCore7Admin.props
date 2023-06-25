@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ProyASPNetCore7Admin.props" />
+</Project>
