@@ -1,4 +1,8 @@
-Scaffold-DbContext "server=nombre_server;database=DBSeguimientoGastos;integrated security=true;Encript=false" Microsoft.EntityFramework.SqlServer -OutPutDir Models
+* NO FUNCIONA
+Scaffold-DbContext "server=nombre_server;database=DBSeguimientoGastos;integrated security=true;Encript=false" Microsoft.EntityFrameworkCore.SqlServer -OutPutDir Models
 
-* ESTE FUNCIONA
+* ESTE NO FUNCIONA entityFrameworkCore 7.0.7 y 7.0.8 (usar 7.0.8)
 Scaffold-DbContext "Server=(local); DataBase=DBPRUEBA; Trusted_Connection=True; TrustServerCertificate=True;" Microsoft.EntityFrameworkCore.SqlServer -OutPutDir Models
+
+* PROBANDO
+dotnet ef dbcontext scaffold "Server=NOTE_DERRMAN\SQLEXPRESS;Database=DBSeguimientoGastos;Integrated Security=true;Encrypt=False" Microsoft.EntityFrameworkCore.SqlServer --output-dir Models

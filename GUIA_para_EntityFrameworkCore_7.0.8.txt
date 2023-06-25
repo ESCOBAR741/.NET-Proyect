@@ -1,0 +1,46 @@
+1) Descarga e instala .Net 6.0 SDK x64 en Windows de este link.
+  https://dotnet.microsoft.com/es-es/download
+  
+2) abre una consola de CMD como administrador,
+  Verifica que tienes instalado el .Net:
+     > dotnet --version
+     No te preocupes si no aparece la verción 6.0
+  Verifica si tienes instalado el CLI de EF Core:
+     > dotnet ef --version
+  Si no esta instalado, instalalo con: 
+     > dotnet tool install --global dotnet-ef
+  Verifica que tienes instalado el CLI de EF Core.
+
+3) Abre el proyecto en Visual Studio y conecta la base de datos.
+
+4) instala los siguientes paquetes en nuget:
+  Microsoft.EntityFrameworkCore.SqlServer 7.0.8
+  Microsoft.EntityFrameworkCore.Tools 7.0.8
+  Microsoft.EntityFrameworkCore.Design 7.0.8
+ 
+5) Abre una terminal integrada yendo al menu /Ver/Terminal.
+  Por defecto te abre una terminal de PowerShell.
+  Haz clic clic en el triangulito al lado de "PowerShell para desarrolladores" y escoge "Simbolo del sistema para desarrolladores".
+
+6) Verifica si itenes instalado el .Net y el CLI de EF Core.
+
+7) Agrega la referencia al paquete NuGet de EF Core en el proyecto para usar la CLI:
+  > dotnet add package Microsoft.EntityFrameworkCore.Design
+
+8) Usar el siguiente comando scaffold para generar las clases del modelo:
+  > dotnet ef dbcontext scaffold "Server=nombre_server;Database=DBSeguimientoGastos;Integrated Security=true;Encrypt=False" Microsoft.EntityFrameworkCore.SqlServer --output-dir Models
+  Coloca el nombre del servidor.
+  Te deberia salir un mensaje amarillo y que la construccion fue exitosa.
+
+9) Si no te construye y te da error, vas a tener que hacer el proyecto desde cero en el paso 3). Porque no sirve borrar los controladores, modelos y las vistas, a mi no me resulto. Quizas debi haber deshecho los cambios en los archivos del paso 10), pero mejor hacer todo de nuevo. Ha ré un video de los pasos 10) y 11) agregaré las lineas de codigo que se agregan, se modifican.
+
+10) Hacer los cambios en los archivos:
+  appsetting.json
+  Program.cs
+  DbseguimientoGastosContext.cs
+11) Agregar los controladores para cada tabla.
+  
+
+
+
+
