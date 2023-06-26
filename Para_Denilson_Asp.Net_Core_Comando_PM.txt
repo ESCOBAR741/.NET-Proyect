@@ -1,4 +1,4 @@
-* NO FUNCIONA
+* SI FUNCIONA
 Scaffold-DbContext "server=nombre_server;database=DBSeguimientoGastos;integrated security=true;Encrypt=false" Microsoft.EntityFrameworkCore.SqlServer -OutPutDir Models
 
 * ESTE NO FUNCIONA entityFrameworkCore 7.0.7 y 7.0.8 (usar 7.0.8)
