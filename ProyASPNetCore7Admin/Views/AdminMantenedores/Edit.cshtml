@@ -4,6 +4,10 @@
     ViewData["Title"] = "Edit";
 }
 
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
 <h1>Edit</h1>
 
 <h4>AdminMantenedore</h4>
@@ -52,3 +56,83 @@
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
+
+<script>
+    $(document).ready(function () {
+        // Validar el campo Nombres en tiempo real
+        $('#Nombres').on('input', function () {
+            var nombres = $(this).val().trim();
+
+            if (nombres === '') {
+                $(this).addClass('is-invalid');
+                $('span[data-valmsg-for="Nombres"]').text('Este campo es obligatorio.');
+            } else {
+                $(this).removeClass('is-invalid');
+                $('span[data-valmsg-for="Nombres"]').text('');
+            }
+        });
+
+        // Validar el campo Apellidos en tiempo real
+        $('#Apellidos').on('input', function () {
+            var apellidos = $(this).val().trim();
+
+            if (apellidos === '') {
+                $(this).addClass('is-invalid');
+                $('span[data-valmsg-for="Apellidos"]').text('Este campo es obligatorio.');
+            } else {
+                $(this).removeClass('is-invalid');
+                $('span[data-valmsg-for="Apellidos"]').text('');
+            }
+        });
+
+        // Validar el campo Run en tiempo real
+        $('#Run').on('input', function () {
+            var run = $(this).val().trim();
+
+            if (run === '') {
+                $(this).addClass('is-invalid');
+                $('span[data-valmsg-for="Run"]').text('Este campo es obligatorio.');
+            } else {
+                var regexRun = /^[0-9]+-[0-9Kk]$/;
+                if (!regexRun.test(run)) {
+                    $(this).addClass('is-invalid');
+                    $('span[data-valmsg-for="Run"]').text('El formato del RUN no es válido.');
+                } else {
+                    $(this).removeClass('is-invalid');
+                    $('span[data-valmsg-for="Run"]').text('');
+                }
+            }
+        });
+
+        // Validar el campo Nombre Administrador en tiempo real
+        $('#UsuarioAm').on('input', function () {
+            var usuarioAm = $(this).val().trim();
+
+            if (usuarioAm === '') {
+                $(this).addClass('is-invalid');
+                $('span[data-valmsg-for="UsuarioAm"]').text('Este campo es obligatorio.');
+            } else {
+                $(this).removeClass('is-invalid');
+                $('span[data-valmsg-for="UsuarioAm"]').text('');
+            }
+        });
+
+        // Validar el campo Apellidos Administrador en tiempo real
+        $('#PasswordAm').on('input', function () {
+            var passwordAm = $(this).val().trim();
+
+            if (passwordAm === '') {
+                $(this).addClass('is-invalid');
+                $('span[data-valmsg-for="PasswordAm"]').text('Este campo es obligatorio.');
+            } else {
+                $(this).removeClass('is-invalid');
+                $('span[data-valmsg-for="PasswordAm"]').text('');
+            }
+        });
+
+        // Limpiar la clase 'is-invalid' al cambiar el valor de un campo
+        $('input').on('input', function () {
+            $(this).removeClass('is-invalid');
+        });
+    });
+</script>

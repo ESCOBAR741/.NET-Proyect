@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\denil\\OneDrive\\Documentos\\GitHub\\.NET-Proyect\\ProyASPNetCore7Admin\\ProyASPNetCore7Admin.csproj": {}
+    "C:\\Users\\denil\\OneDrive\\Escritorio\\ProyASPNetCore7Admin\\ProyASPNetCore7Admin.csproj": {}
   },
   "projects": {
-    "C:\\Users\\denil\\OneDrive\\Documentos\\GitHub\\.NET-Proyect\\ProyASPNetCore7Admin\\ProyASPNetCore7Admin.csproj": {
+    "C:\\Users\\denil\\OneDrive\\Escritorio\\ProyASPNetCore7Admin\\ProyASPNetCore7Admin.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\denil\\OneDrive\\Documentos\\GitHub\\.NET-Proyect\\ProyASPNetCore7Admin\\ProyASPNetCore7Admin.csproj",
+        "projectUniqueName": "C:\\Users\\denil\\OneDrive\\Escritorio\\ProyASPNetCore7Admin\\ProyASPNetCore7Admin.csproj",
         "projectName": "ProyASPNetCore7Admin",
-        "projectPath": "C:\\Users\\denil\\OneDrive\\Documentos\\GitHub\\.NET-Proyect\\ProyASPNetCore7Admin\\ProyASPNetCore7Admin.csproj",
+        "projectPath": "C:\\Users\\denil\\OneDrive\\Escritorio\\ProyASPNetCore7Admin\\ProyASPNetCore7Admin.csproj",
         "packagesPath": "C:\\Users\\denil\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\denil\\OneDrive\\Documentos\\GitHub\\.NET-Proyect\\ProyASPNetCore7Admin\\obj\\",
+        "outputPath": "C:\\Users\\denil\\OneDrive\\Escritorio\\ProyASPNetCore7Admin\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\denil\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -60,14 +60,6 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[6.0.14, )"
-            },
-            "Microsoft.jQuery.Unobtrusive.Validation": {
-              "target": "Package",
-              "version": "[4.0.0, )"
-            },
-            "bootstrap": {
-              "target": "Package",
-              "version": "[5.3.0, )"
             }
           },
           "imports": [
