@@ -7,7 +7,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
-<h1>Create</h1>
+<h1>Creatar</h1>
 
 <h4>Usuario</h4>
 <hr />
@@ -45,14 +45,14 @@
                 <select asp-for="IdDepto" class ="form-control" asp-items="ViewBag.IdDepto"></select>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Create" class="btn btn-success" />
             </div>
         </form>
     </div>
 </div>
-
+<br/>
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index" class="btn btn-info">Back to List</a>
 </div>
 
 @section Scripts {
