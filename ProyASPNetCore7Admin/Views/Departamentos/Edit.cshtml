@@ -3,8 +3,11 @@
 @{
     ViewData["Title"] = "Edit";
 }
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
 
-<h1>Edit</h1>
+<h1>Editar</h1>
 
 <h4>Departamento</h4>
 <hr />
@@ -26,9 +29,24 @@
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index" class="btn btn-info">Back to List</a>
 </div>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
+
+<script>
+    // Validar el campo Departamento en tiempo real
+    $('#NombreDepto').on('input', function () {
+        var nombreDepto = $(this).val().trim();
+
+        if (nombreDepto === '') {
+            $(this).addClass('is-invalid');
+            $('span[data-valmsg-for="NombreDepto"]').text('Este campo es obligatorio.');
+        } else {
+            $(this).removeClass('is-invalid');
+            $('span[data-valmsg-for="NombreDepto"]').text('');
+        }
+    });
+</script>

@@ -3,8 +3,11 @@
 @{
     ViewData["Title"] = "Edit";
 }
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
 
-<h1>Edit</h1>
+<h1>Editar</h1>
 
 <h4>Usuario</h4>
 <hr />
@@ -44,16 +47,96 @@
                 <span asp-validation-for="IdDepto" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+                <input type="submit" value="Save" class="btn btn-success" />
             </div>
         </form>
     </div>
 </div>
-
+<br/>
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index" class="btn btn-info">Back to List</a>
 </div>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
+
+<script>
+    $(document).ready(function () {
+        // Validar el campo Nombres en tiempo real
+        $('#Nombres').on('input', function () {
+            var nombres = $(this).val().trim();
+
+            if (nombres === '') {
+                $(this).addClass('is-invalid');
+                $('span[data-valmsg-for="Nombres"]').text('Este campo es obligatorio.');
+            } else {
+                $(this).removeClass('is-invalid');
+                $('span[data-valmsg-for="Nombres"]').text('');
+            }
+        });
+
+        // Validar el campo Apellidos en tiempo real
+        $('#Apellidos').on('input', function () {
+            var apellidos = $(this).val().trim();
+
+            if (apellidos === '') {
+                $(this).addClass('is-invalid');
+                $('span[data-valmsg-for="Apellidos"]').text('Este campo es obligatorio.');
+            } else {
+                $(this).removeClass('is-invalid');
+                $('span[data-valmsg-for="Apellidos"]').text('');
+            }
+        });
+
+        // Validar el campo Run en tiempo real
+        $('#Run').on('input', function () {
+            var run = $(this).val().trim();
+
+            if (run === '') {
+                $(this).addClass('is-invalid');
+                $('span[data-valmsg-for="Run"]').text('Este campo es obligatorio.');
+            } else {
+                var regexRun = /^[0-9]+-[0-9Kk]$/;
+                if (!regexRun.test(run)) {
+                    $(this).addClass('is-invalid');
+                    $('span[data-valmsg-for="Run"]').text('El formato del RUN no es válido.');
+                } else {
+                    $(this).removeClass('is-invalid');
+                    $('span[data-valmsg-for="Run"]').text('');
+                }
+            }
+        });
+
+        // Validar el campo Nombre Administrador en tiempo real
+        $('#Usuario1').on('input', function () {
+            var usuario1 = $(this).val().trim();
+
+            if (usuario1 === '') {
+                $(this).addClass('is-invalid');
+                $('span[data-valmsg-for="Usuario1"]').text('Este campo es obligatorio.');
+            } else {
+                $(this).removeClass('is-invalid');
+                $('span[data-valmsg-for="Usuario1"]').text('');
+            }
+        });
+
+        // Validar el campo Apellidos Administrador en tiempo real
+        $('#Password').on('input', function () {
+            var password = $(this).val().trim();
+
+            if (password === '') {
+                $(this).addClass('is-invalid');
+                $('span[data-valmsg-for="Password"]').text('Este campo es obligatorio.');
+            } else {
+                $(this).removeClass('is-invalid');
+                $('span[data-valmsg-for="Password"]').text('');
+            }
+        });
+
+        // Limpiar la clase 'is-invalid' al cambiar el valor de un campo
+        $('input').on('input', function () {
+            $(this).removeClass('is-invalid');
+        });
+    });
+</script>
