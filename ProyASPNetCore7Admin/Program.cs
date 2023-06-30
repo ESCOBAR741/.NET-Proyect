@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 using ProyASPNetCore7Admin.Models;
 
@@ -8,6 +9,11 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<DbseguimientoGastosContext>(options =>
         options.UseSqlServer(builder.Configuration.GetConnectionString("conexion")));
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(
+    option => {
+        option.LoginPath = "/Account/Index";
+    }
+);
 
 var app = builder.Build();
 
@@ -28,6 +34,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Home}/{action=Index}");
 
 app.Run();

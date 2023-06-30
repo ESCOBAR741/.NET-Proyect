@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -158,5 +159,38 @@ namespace ProyASPNetCore7Admin.Controllers
         {
           return (_context.AdminMantenedores?.Any(e => e.Id == id)).GetValueOrDefault();
         }
+
+
+        /*
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit([Bind("Id,Nombres,Apellidos,Run,UsuarioAm,PasswordAm")] Administrador administrador, Contra contras)
+        {
+            if (!SoloLetras(administrador.Usuario))
+            {
+                ModelState.AddModelError("Usuario", "El Nombre ingresado no es válido.");
+            }
+            if (!EsRutValido(administrador.Rut))
+            {
+                ModelState.AddModelError("Rut", "El Rut ingresado no es válido.");
+            }
+            if (!LargoPass(administrador.Password))
+            {
+                ModelState.AddModelError("Password", "El largo debe ser entre 5 y 8");
+            }
+            if (!administrador.Password.Equals(contras.contra))
+            {
+                ModelState.AddModelError("Password", "La contraseña no coincide");
+            }
+            if (ModelState.IsValid)
+            {
+                _context.Add(administrador);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+            return View(administrador);
+        }
+        */
+
     }
 }
